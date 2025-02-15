@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+}
+body {
+    font-family: 'Dancing Script', cursive;
+}
+header h1 {
+    text-shadow: 0 0 10px pink, 0 0 20px hotpink;
+}
+
+
+/* Fundo para os corações */
+.hearts-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Estilo dos corações */
+.heart {
+    position: absolute;
+    font-size: 30px;
+    opacity: 0;
+    animation: float-heart 5s linear infinite;
+}
+
+/* Animação dos corações */
+@keyframes float-heart {
+    0% { transform: translateY(100vh) scale(1); opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+}
+
+/* Estilizando o título */
+header h1 {
+    font-size: 2.5em;
+    margin: 30px 0;
+    color: pink;
+}
+
+/* Estilizando as mensagens */
+.mensagem {
+    background: rgba(0, 0, 0, 0.616); /* Rosa claro translúcido */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 192, 203, 0.5);
+    border: 2px solid rgba(255, 105, 180, 0.5);
+}
+
+/* Títulos das mensagens */
+.mensagem h2 {
+    font-size: 1.8em;
+    color: pink;
+    margin-bottom: 10px;
+}
+
+/* Texto das mensagens */
+.mensagem p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+.mensagem {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Estilizando a seção de agradecimento */
+.agradecimento {
+    background: rgba(255, 105, 180, 0.3);
+    border: 2px solid rgba(255, 105, 180, 0.8);
+}
+
+/* Estilo das fotos */
+.fotos img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 3px solid pink;
+    /* Estilizando o quadrado "Resumo" */
+.resumo {
+    background: pink;
+    color: black;
+    padding: 10px;
+    width: 120px;
+    margin: 0 auto 10px auto;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+}
+
+/* Ajustando a mensagem para evitar que o texto ultrapasse */
+.mensagem p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    word-wrap: break-word; /* Quebra palavras longas */
+    overflow-wrap: break-word; /* Garante que o texto quebre corretamente */
+}
+}
+#mensagem-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 105, 180, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+    display: none; /* Começa escondido */
+}
+
+
+.fotos img {
+    transition: transform 0.3s ease-in-out;
+}
+.fotos img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+}
+#mensagem-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 105, 180, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+    display: none; /* Começa escondido */
+}
+
+#mensagem-secreta {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.botao-amor {
+    background: pink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.botao-amor:hover {
+    background: hotpink;
+}
+
+
